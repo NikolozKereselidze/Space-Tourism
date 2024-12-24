@@ -1,0 +1,29 @@
+.navWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 0;
+  margin-top: 2rem;
+  background-color: transparent;
+  backdrop-filter: blur(1rem);
+}
+
+.navigation {
+  display: flex;
+  gap: 4.8rem;
+  margin-right: 8%;
+}
+
+.navigation > a {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.logo {
+  margin-left: 6rem;
+  width: 4rem;
+}

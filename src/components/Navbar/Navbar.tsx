@@ -1,14 +1,18 @@
+import { Link } from "react-router-dom";
 import logo from "../../assets/shared/logo.svg";
+import styles from "./Navbar.module.css";
 
 const navigations: string[] = ["Home", "Destinations", "Crew", "Technology"];
 
 const Navbar = () => {
   return (
-    <div className="">
-      <img src={logo} alt="Website logo" />
-      <div className="">
+    <div className={styles.navWrapper}>
+      <img src={logo} alt="Website logo" className={styles.logo} />
+      <div className={styles.navigation}>
         {navigations.map((navigation: string) => (
-          <h3 key={navigation}>{navigation}</h3>
+          <Link key={navigation} to={`/${navigation.toLowerCase()}`}>
+            {navigation}
+          </Link>
         ))}
       </div>
     </div>
