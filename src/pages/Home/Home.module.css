@@ -1,0 +1,84 @@
+.home {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../assets/home/background-home-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  margin: 0 14rem;
+  margin-top: 20vh;
+  align-items: center;
+}
+
+.info {
+  text-align: justify;
+  color: #fff;
+  text-transform: uppercase;
+  width: 50%;
+}
+.headText {
+  color: #d0d6f9;
+  font-size: 2.8rem;
+  letter-spacing: 4.75px;
+  font-weight: 400;
+}
+
+.mainText {
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-size: 15rem;
+}
+
+.smallText {
+  font-size: 1.8rem;
+  color: #d0d6f9;
+  font-weight: 500;
+  text-transform: none;
+}
+
+.explore {
+  width: 50%;
+  text-align: center;
+  justify-items: end;
+}
+
+.exploreButton {
+  background-color: #fff;
+  border-radius: 100%;
+  height: 25rem;
+  width: 25rem;
+  /* Trick to vertically align text */
+  line-height: 25rem;
+  transition: box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.exploreButton > a {
+  font-size: 3.2rem;
+  font-family: "Bellefair", serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #0b0d17;
+  text-decoration: none;
+}
+
+.exploreButton:hover {
+  box-shadow: 0px 0px 0px 50px #979797;
+}
+
+@media (max-width: 768px) {
+  .home {
+    background-image: url("../../assets/home/background-home-tablet.jpg");
+  }
+}
+
+@media (max-width: 375px) {
+  .home {
+    background-image: url("../../assets/home/background-home-mobile.jpg");
+  }
+}
