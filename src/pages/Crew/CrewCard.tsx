@@ -1,3 +1,4 @@
+import ReusableCard from "../../components/ReusableCard/ReusableCard";
 import styles from "./Crew.module.css";
 
 export type CrewCardProps = {
@@ -10,37 +11,21 @@ export type CrewCardProps = {
   totalIndex: number;
 };
 
-const CrewCard = ({
-  position,
-  name,
-  description,
-  img,
-  index,
-  setIndex,
-  totalIndex,
-}: CrewCardProps) => {
+const CrewCard = ({ position, name, ...restProps }: CrewCardProps) => {
+  const clickHandler = (i: number) => {
+    if (i !== restProps.index) {
+      restProps.setIndex(i);
+    }
+  };
+
   return (
-    <div className={`sectionWrapper ${styles.crewSection}`}>
-      <div className={styles.crewInfo}>
-        <h2 className={styles.position}>{position}</h2>
-        <h2 className={styles.name}>{name}</h2>
-        <p className={styles.description}>{description}</p>
-        <div className={styles.crewNav}>
-          {Array.from({ length: totalIndex }, (_, i) => (
-            <div
-              key={i}
-              className={`${styles.navCircle} ${
-                i === index ? styles.active : ""
-              }`}
-              onClick={() => setIndex(i)}
-            />
-          ))}
-        </div>
-      </div>
-      <div className={styles.crewImg}>
-        <img src={img} alt={`${name} - ${position}`} />
-      </div>
-    </div>
+    <ReusableCard
+      {...restProps}
+      subtitle={name}
+      title={position}
+      customClass={styles.crewCard}
+      clickHandler={clickHandler}
+    />
   );
 };
 
