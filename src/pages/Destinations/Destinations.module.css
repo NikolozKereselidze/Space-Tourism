@@ -8,13 +8,6 @@
   overflow: hidden;
 }
 
-.planetsWrapper {
-  display: flex;
-  align-items: center;
-  padding: 15vh 10vw;
-  gap: 12rem;
-}
-
 .destTitle {
   font-size: 28px;
   margin-left: 5vw;

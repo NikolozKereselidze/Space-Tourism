@@ -1,1 +1,6 @@
-
+.sectionWrapper {
+  display: flex;
+  align-items: center;
+  padding: 15vh 10vw;
+  gap: 12rem;
+}

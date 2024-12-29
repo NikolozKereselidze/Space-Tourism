@@ -2,6 +2,7 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Destinations from "./pages/Destinations/Destinations";
+import Crew from "./pages/Crew/Crew";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Route index element={<Home />}></Route>
         <Route path="home" element={<Home />}></Route>
         <Route path="destinations" element={<Destinations />} />
+        <Route path="crew" element={<Crew />} />
       </Routes>
     </BrowserRouter>
   );
