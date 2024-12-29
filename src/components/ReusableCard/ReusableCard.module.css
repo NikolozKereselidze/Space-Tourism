@@ -1,0 +1,99 @@
+.reusableCard {
+  padding-bottom: 0;
+  height: 100vh;
+  align-items: start;
+  gap: 3.2rem;
+
+  transition: opacity 5s;
+}
+
+.cardInfo {
+  flex: 1 1 0;
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 3.2rem;
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  color: #fff;
+}
+
+.subtitle {
+  text-transform: uppercase;
+  font-size: 5.6rem;
+  font-family: "Bellefair", serif;
+  font-weight: 500;
+  color: #fff;
+}
+
+.description {
+  color: #d0d6f9;
+  font-size: 2rem;
+  margin-right: 4rem;
+}
+
+.crewNav {
+  margin-top: 6.2rem;
+  display: flex;
+  gap: 3.6rem;
+}
+
+.crewCircle {
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  transition: opacity 5.5s ease-in-out;
+  opacity: 0.5;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.crewActive {
+  opacity: 1;
+}
+
+.techInfo {
+  gap: 1.2rem;
+}
+
+.techTitle {
+  font-size: 1.6rem;
+  color: #d0d6f9;
+}
+
+.techNav {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10vh;
+  gap: 1.2rem;
+}
+
+.techCircle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bellefair", serif;
+  width: 80px;
+  height: 80px;
+  border: 1px white solid;
+  border-radius: 50px;
+  font-size: 32px;
+  cursor: pointer;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  color: white;
+  background-color: transparent;
+}
+
+.techActive {
+  background-color: #fff;
+  color: #000;
+}
+
+.cardImg {
+  height: 100%;
+}
