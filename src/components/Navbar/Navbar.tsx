@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "../../assets/shared/logo.svg";
 import styles from "./Navbar.module.css";
 
@@ -10,9 +10,9 @@ const Navbar = () => {
       <img src={logo} alt="Website logo" className={styles.logo} />
       <div className={styles.navigation}>
         {navigations.map((navigation: string) => (
-          <Link key={navigation} to={`/${navigation.toLowerCase()}`}>
+          <NavLink key={navigation} to={`/${navigation.toLowerCase()}`}>
             {navigation}
-          </Link>
+          </NavLink>
         ))}
       </div>
     </div>
