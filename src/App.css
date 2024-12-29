@@ -4,3 +4,8 @@
   padding: 15vh 10vw;
   gap: 12rem;
 }
+
+a.active {
+  padding-bottom: 0.2rem;
+  border-bottom: 2px solid #fff;
+}
