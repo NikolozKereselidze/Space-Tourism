@@ -18,9 +18,9 @@ const Home = () => {
           </p>
         </div>
         <div className={styles.explore}>
-          <div className={styles.exploreButton}>
-            <Link to={"destinations"}>Explore</Link>
-          </div>
+          <Link to={"/destinations"} className={styles.exploreButton}>
+            <a>Explore</a>
+          </Link>
         </div>
       </div>
     </section>
