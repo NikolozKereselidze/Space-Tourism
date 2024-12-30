@@ -97,3 +97,93 @@
 .cardImg {
   height: 100%;
 }
+
+@media (max-width: 1268px) {
+  .reusableCard {
+    align-items: center;
+  }
+
+  .cardInfo {
+    margin-top: 0;
+    justify-content: center;
+  }
+
+  .subtitle {
+    font-size: 4.2rem;
+  }
+
+  .title {
+    font-size: 2.8rem;
+  }
+
+  .description {
+    font-size: 1.8rem;
+  }
+
+  .techNav {
+    margin-top: 0;
+  }
+
+  .crewNav {
+    margin-top: 3.2rem;
+  }
+
+  .cardImg {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .cardImg > img {
+    height: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .reusableCard {
+    flex-direction: column;
+    margin-top: 10vh;
+    padding: 0;
+  }
+
+  .cardInfo {
+    align-items: center;
+    text-align: center;
+    width: 80%;
+  }
+
+  .cardImg {
+    align-items: start;
+    height: 70%;
+  }
+
+  .subtitle {
+    font-size: 3rem;
+  }
+
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .description {
+    font-size: 1.6rem;
+    margin-right: 0;
+  }
+
+  .crewCircle {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .subtitle {
+    font-size: 2rem;
+  }
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .description {
+    font-size: 1.4rem;
+  }
+}
