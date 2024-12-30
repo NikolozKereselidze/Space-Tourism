@@ -72,7 +72,7 @@ const ReusableCard = ({
             </div>
           )}
         </div>
-        <div className={styles.cardImg}>
+        <div className={`${styles.cardImg} ${!subtitle && styles.techImg}`}>
           <img src={img} alt={`${title} ${subtitle || ""}`} />
         </div>
       </motion.div>

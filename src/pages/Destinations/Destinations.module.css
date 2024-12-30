@@ -1,7 +1,7 @@
 .destinations {
   width: 100vw;
   height: 100vh;
-  background-image: url("../../assets/destination/background-destination-desktop.jpg");
+  background-image: url("/assets/destination/background-destination-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -133,6 +133,10 @@
 }
 
 @media (max-width: 768px) {
+  .destDiv {
+    padding-bottom: 4.8rem;
+  }
+
   .cardWrapper {
     flex-direction: column-reverse;
     gap: 2.8rem;
@@ -162,7 +166,7 @@
     max-width: 25%;
   }
   .destinations {
-    background-image: url("../../assets/destination/background-destination-tablet.jpg");
+    background-image: url("/assets/destination/background-destination-tablet.jpg");
   }
 }
 
@@ -186,6 +190,6 @@
     font-size: 1.8rem;
   }
   .destinations {
-    background-image: url("../../assets/destination/background-destination-mobile.jpg");
+    background-image: url("/assets/destination/background-destination-mobile.jpg");
   }
 }

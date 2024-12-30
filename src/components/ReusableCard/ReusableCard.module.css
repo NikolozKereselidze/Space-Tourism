@@ -3,8 +3,6 @@
   height: 100vh;
   align-items: start;
   gap: 3.2rem;
-
-  transition: opacity 5s;
 }
 
 .cardInfo {
@@ -47,7 +45,6 @@
   width: 15px;
   height: 15px;
   background-color: white;
-  transition: opacity 5.5s ease-in-out;
   opacity: 0.5;
   border-radius: 25px;
   cursor: pointer;
@@ -84,7 +81,6 @@
   border-radius: 50px;
   font-size: 32px;
   cursor: pointer;
-  transition: background-color 0.5s ease, color 0.5s ease;
   color: white;
   background-color: transparent;
 }
@@ -96,6 +92,10 @@
 
 .cardImg {
   height: 100%;
+}
+
+.techImg > img {
+  border-radius: 8px;
 }
 
 @media (max-width: 1268px) {
@@ -133,8 +133,21 @@
     align-items: flex-end;
   }
 
+  .techImg {
+    align-items: center;
+  }
+
+  .techCircle {
+    width: 60px;
+    height: 60px;
+  }
+
   .cardImg > img {
     height: 50%;
+  }
+
+  .techImg > img {
+    height: 40%;
   }
 }
 
@@ -172,6 +185,15 @@
   .crewCircle {
     width: 10px;
     height: 10px;
+  }
+
+  .techNav {
+    flex-direction: row;
+  }
+
+  .techCircle {
+    width: 40px;
+    height: 40px;
   }
 }
 

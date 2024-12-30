@@ -21,7 +21,7 @@ const Destinations = () => {
   const [planets, setPlanets] = useState<string[]>([]);
 
   useEffect(() => {
-    fetch("/src/data.json")
+    fetch("/data.json")
       .then((response) => response.json())
       .then((res) => {
         setDestinations(res.destinations);
@@ -48,7 +48,7 @@ const Destinations = () => {
             transition={{
               duration: 0.5,
             }}
-            className="divWrapper"
+            className={`${styles.destDiv} divWrapper`}
           >
             <div className={styles.destinationContainer}>
               {destinations.map((destination) =>
