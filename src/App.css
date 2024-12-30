@@ -9,3 +9,18 @@ a.active {
   padding-bottom: 0.2rem;
   border-bottom: 2px solid #fff;
 }
+
+.divWrapper {
+  height: 100%;
+}
+
+@media (max-width: 1268px) {
+  .sectionWrapper {
+    padding: 0 5vw;
+  }
+
+  .divWrapper {
+    display: flex;
+    align-items: center;
+  }
+}

@@ -30,7 +30,7 @@ const DestinationCard = ({
   };
 
   return (
-    <div className="sectionWrapper">
+    <div className={`${styles.cardWrapper} sectionWrapper`}>
       <img
         src={images.webp}
         alt=""

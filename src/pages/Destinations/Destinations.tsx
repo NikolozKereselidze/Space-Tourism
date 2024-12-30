@@ -48,6 +48,7 @@ const Destinations = () => {
             transition={{
               duration: 0.5,
             }}
+            className="divWrapper"
           >
             <div className={styles.destinationContainer}>
               {destinations.map((destination) =>
