@@ -1,9 +1,12 @@
+.navContainer {
+  padding-top: 2rem; /* Use padding here instead of margin on .navWrapper */
+}
+
 .navWrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.4rem 0;
-  margin-top: 2rem;
   background-color: transparent;
   backdrop-filter: blur(1rem);
 }
