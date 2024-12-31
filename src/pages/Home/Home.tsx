@@ -29,7 +29,7 @@ const Home = () => {
           </div>
           <div className={styles.explore}>
             <Link to={"/destinations"} className={styles.exploreButton}>
-              <a>Explore</a>
+              Explore
             </Link>
           </div>
         </motion.div>

@@ -64,7 +64,7 @@
   cursor: pointer;
 }
 
-.exploreButton > a {
+.exploreButton {
   font-size: 3.2rem;
   font-family: "Bellefair", serif;
   text-transform: uppercase;
@@ -117,7 +117,7 @@
     line-height: 18rem;
   }
 
-  .exploreButton > a {
+  .exploreButton {
     font-size: 2.4rem;
   }
 }
@@ -144,7 +144,7 @@
     line-height: 14rem;
   }
 
-  .exploreButton > a {
+  .exploreButton {
     font-size: 2.2rem;
   }
 
@@ -179,7 +179,7 @@
     line-height: 11rem;
   }
 
-  .exploreButton > a {
+  .exploreButton > {
     font-size: 1.8rem;
   }
 
